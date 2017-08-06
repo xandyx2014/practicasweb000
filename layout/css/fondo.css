@@ -1,0 +1,13 @@
+body{
+	background:url("../imagen/vintage-leaves/vintage-leaves.png");
+
+	background-repeat: repeat;
+	background-size:cover;
+	background-attachment: fixed;	
+	
+}
+a{
+	display: inline-block;
+	padding: 10px; 
+	color: #10F5D2;
+}

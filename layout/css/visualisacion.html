@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<style type="text/css" media="screen">
+.caja{
+	color:#0B0A0A;
+background-color: #51F6E5;
+margin: 20px 0;
+width: 200px;
+height: 200px;
+/* overflow: hidden; */
+overflow: auto;
+}
+	div,a{
+		background-color: #BEAFAF;
+	}
+	a{
+		margin :20px;
+		background-color: #7D7DD4;
+		padding: 20px;
+		display: inline-block;
+		/* display: none; */
+		/* visibility: hidden; */
+	}
+	.padre{
+		background-color: #EAE0E0;
+		margin: 20px 0;
+		overflow: hidden;
+	}
+	.derecha{
+		float: right;
+	}
+	.izquierda{
+		float: left;
+	}
+	.contenedor2 .caja{
+		width: 150px;
+		height: 150px;
+		position: relative;
+	}
+	.azul{
+		background-color: #322DF9;
+		z-index:10 ;
+	}
+	.gris{
+		background-color: #CAC2C2;
+		left: 50px;
+		bottom: 80px;
+		z-index:11; ;
+	}
+</style>
+<body>
+<div class="caja">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div><br>
+	<a href="#">email me</a><br><a href="#">email me</a>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="padre">
+		<a href="#" class="derecha">derecha</a>
+		<a href="#" class="inzquierda">izquierda</a>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="contenedor2">
+		<div class="caja azul"></div><div class="caja gris"></div>
+	</div>
+
+</body>
+</html>

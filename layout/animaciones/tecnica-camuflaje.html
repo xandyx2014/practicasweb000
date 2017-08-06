@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Efectos css3</title>
+	<link rel="stylesheet" href="">
+</head>
+<style type="text/css" media="screen">
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	margin:auto;
+	width: 50%;
+}
+div{
+
+	font-family: 'Arial';
+	background-color: #A8308A;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.triangulo_lateral{
+	-webkit-transform: traslateX(0);
+}
+.triangulo_lateral:before{
+	content: '';
+	border-style: solid;
+	
+	border-color: transparent #A8308A transparent transparent;
+	border-width: 15px 15px 15px 0;
+	position: absolute;	
+	
+	left: 10px;
+	top: 7%;
+	margin-top: -15px;
+}
+.triangulo_lateral:hover:before{
+	left: -13px;
+
+}
+	
+</style>
+<body>
+	<div class="triangulo_lateral">
+		<p>Triangulo</p>
+	</div>
+	<div class="esquina_pagina">
+		<p>Escquina de Pagina</p>
+	</div>
+	<div class="sombra_fija">
+		<p>Sombra</p>
+	</div>
+	
+</body>
+</html>

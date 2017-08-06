@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+	*{
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	body{
+		background: #f2f2f2;
+		font-family: Arial;
+	}
+	.padre{
+		width: 80%;
+		height:500px;
+		max-width: 700px;
+		background: #f12d48;
+		display: flex;
+		/* //flex para el contenedor padre */
+		/* 
+		estamos habilitando flex a nuestro elementos */
+		/* flex-direction: row-reverse; */
+		/*filass al rever*/
+		/* flex-direction: column; */
+		/*nos permite hacer columnas*/
+		/* flex-direction: column-reverse;
+		nos permite acomodar las columnas al reves */
+	/* flex-wrap:wrap; */
+	/* respecta la caja su tamaño su ancho no lo vuelve flexible */
+	/* flex-wrap: nowrap;
+	las cajas se vuelve flexibles y se acomodan segund el contenedor tiene un ancho dinamico */
+	/* flex-flow: row wrap; */
+	/* la combinacion de los dos elementos */
+	/* justify-content:flex-end;
+	nos posiciones los elemenos al borde sobrante
+	ejempplo
+	// 0----//
+
+	//-----0// */
+	/* justify-content:center; */
+    /* nos centra los elementos
+    //0----//
+    //--0--// */
+    /* justify-content: space-between; */
+   /*  nos dividi el espacio sobrante del contenedor y los divide en espacio iguales
+   //0-0-0--------//
+   //0-----0-----0// */
+   /* justify-content: space-around; */
+  /*  la misma cualidad de space-between pero este le permite tener espacion adelante
+  //--0-----0-----0--// */
+  /* align-items:flex-end; 
+  nos los envia a los pies de la caja 
+   // 0-0-0-------//
+      ------------
+    //-------------//
+  
+  
+    
+  
+    //-----------//
+      ------------
+    //-0-0-0--------// */
+   /*  align-items: center;
+   centramos nuestros elementos verticalmente */
+   /* // 0----0----0//
+      ------------
+    //-------------//
+     
+     
+    
+     
+    //-----------//
+      --0--0--0---
+    //-----------// */
+    /* align-items: stretch; */
+   /*  nos permite heigth de la caja alargarlo sin limites respetando a la cajam padre siempre cuando no declares un heigth a las caja
+   // 0----0----0//
+     ------------
+   //-------------//
+   
+   
+   // 0----0----0//
+     -0----0----0-
+   //-------------// */
+ /*   align-items: baseline;
+ alinia los elementos segun la fuente
+  _____           ____
+ |     |         |    |
+ |__5__|_________|__5_|
+ |     |         |    |
+ |_____|         |____|
+   *
+
+   /
+  /*  align-content: flex-start;
+  valor prederteminado comiensan en una esquina
+  // 0--0--0----//
+    ------------
+  //-------------// */
+ /*  align-content: flex-end;
+ // -----------//
+   ------------
+ //-0-0-0------// */
+ /* align-content: space-between;
+ deja un espacio en el medio
+ // -0-0-0--------//
+   ------------
+ //-0-0-0-------// */
+/*  align-content: space-around;
+deja un espacio en el medio solo que este deja un espaciado abajo y arriba
+//---------------//
+// -0-0-0--------//
+  ------------
+//-0-0-0-------// 
+//--------------// */
+/* //TODA align-content FUNCIONA CUANDO AY MAS DE UNA LINEA DE ELEMENTOS */
+
+   
+
+
+	}
+	.caja{
+		/* //propiedades de flex para contenedores hijos */
+		width: 100px;
+		height: 100px;
+		background: #f78256;
+		text-align: center;
+		margin: 20px;
+		padding: 20px;
+		font-size: 40px;
+		color:#fff;
+		/* order: 1; */
+		/* //nos permite ordenar las cajas numericamentes 1-2-3-4*/
+		/* flex-grow: 1;
+		la caja se vuelve ancho lo que necesita y abarca todo el espacio disponible */
+		/* flex-shrink: 0;
+		nos permite q el elemento no se vuelva mas pequeñop */
+		/* flex-basis: 200px; */
+	 /*    flex-grow: 2;
+	 nos dice q cresca 2 veces mas que el uno */
+	 /* align-self:flex-start;
+	 //comiensa al principio
+	 align-self: flex-end;
+	 //comiensa al final */
+
+
+	}
+	/* .dos{
+		order: 2;
+	}
+	.uno{
+		order: 3;
+	}
+	.tres{
+		order: 1;
+	} */
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{}
+
+
+	</style>
+	
+</head>
+<body>
+<div class="padre">
+	<div class="caja uno">
+		1
+	</div>
+	<div class="caja dos">
+		2
+	</div>
+	<div class="caja tres">
+		3
+	</div>
+	
+	
+</div>
+	
+</body>
+</html>

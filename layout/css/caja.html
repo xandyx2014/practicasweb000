@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+*{padding: 0;margin: 0;}
+.caja{
+	width: 200px;
+	height: 200px;
+	background-color: #0e6ba8;
+	margin: 20px;
+	
+}
+body{
+	color: #f2f2f2;
+
+}
+.posicionada{
+	background-color: #6695e8;
+	/* position: relative;
+	left: 200px;
+	top: 50px;
+	bottom: ;
+	right: ; */
+	/* position: absolute;
+	left: 220px;
+	top: 100px;
+	bottom: ;
+	right: ; */
+	/*position: fixed*//* se quede en la pantalla y el escroll no le afecta */
+	position: absolute;
+	/*left:0%;
+	bottom: 0%;right: 0%;
+	top: 0%;*/
+	left: 125px;
+	top: 125px;
+	
+	
+	
+	
+}
+.cajapadre{
+	margin: 20px;
+	background-color:#2D79F7;
+	width: 500px;
+	height: 500px;
+	position: relative;
+
+}
+/* normal //static// posicionamiento por defecto con el navegadores acomodan ls elelementos */
+/* relativo //relative// nos permite posicionar una caja y despues moverla a su lugar original */
+/* absoluto absolute nos permite posicionar una caja a su contenedor y el resto de elmento ignoran la nueva posicion */
+/* fija fixed nos permite posicionar una caja en donde su pocision respecto a la pantalla del usuario va a ser la misma */
+/* flotante float nos permite desplazar las cajas lo posible hacia derecha e izquierda */
+</style>
+
+<body>
+<div class="caja">
+	
+</div>
+<div class="cajapadre">
+	<div class="caja posicionada">
+		
+	</div>
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+<div class="caja">
+	
+</div>
+	
+</body>
+</html>
